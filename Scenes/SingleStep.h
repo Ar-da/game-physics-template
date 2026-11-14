@@ -1,7 +1,9 @@
 #include "Scene.h"
+#include "SpringSystem.h"
 
 class SingleStep : public Scene
 {
-    public:
-    void onDraw(Renderer &renderer) override;
+    void init() override;
+
+    SpringSystem springSystem;
 };

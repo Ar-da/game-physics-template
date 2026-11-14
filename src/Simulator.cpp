@@ -15,7 +15,7 @@ void Simulator::init()
     }
     else
     {
-        currentSceneName = sceneNames[0];
+        currentSceneName = "Single Step";
         currentScene = scenesCreators[currentSceneName]();
         currentScene->init();
     }
